@@ -57,11 +57,7 @@ namespace Hotel.WebApi
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(config =>
-            {
-                config.RoutePrefix = string.Empty;
-                config.SwaggerEndpoint("../swagger/v1/swagger.json", "HotelAPI");
-            });
+            app.UseSwaggerUI();
             app.UseCustomExceptionHandler(); 
             app.UseRouting();
             app.UseHttpsRedirection();
