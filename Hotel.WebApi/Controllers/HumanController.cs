@@ -8,11 +8,21 @@ using Hotel.WebApi.Models;
 
 namespace Hotel.WebApi.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     public class HumanController : BaseController
     {
         private readonly IMapper _mapper;
         public HumanController(IMapper mapper) => _mapper = mapper;
+
+        /// <summary>
+        /// Gets the list of humans
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// GET /human
+        /// </remarks>
+        /// <returns>Returns HumanListVm</returns>
         [HttpGet]
         public async Task<ActionResult<HumanListVm>> GetAll()
         {
@@ -21,6 +31,22 @@ namespace Hotel.WebApi.Controllers
             return Ok(vm);
         }
 
+        /// <summary>
+        /// Creates the human
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// POST /human
+        /// {
+        ///     surname: "human surname",
+        ///     firstname: "human firstname",
+        ///     middlename: "human middlename",
+        ///     phonenumber: "89899574319",
+        ///     email: "humanemail@gmail.com"
+        /// }
+        /// </remarks>
+        /// <param name="createHumanDto">CreateHumanDto object</param>
+        /// <returns>Returns id (guid)</returns>
         [HttpPost]
         public async Task<ActionResult<Guid>> Create([FromBody] CreateHumanDto createHumanDto)
         {
@@ -29,6 +55,17 @@ namespace Hotel.WebApi.Controllers
             return Ok(humanId);
         }
 
+        /// <summary>
+        /// Updates the human
+        /// </summary>
+        /// <remarks>
+        /// PUT /human
+        /// {
+        ///     surname: "updated human surname"
+        /// }
+        /// </remarks>
+        /// <param name="updateHumanDto">UpdateHumanDto object</param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UpdateHumanDto updateHumanDto)
         {

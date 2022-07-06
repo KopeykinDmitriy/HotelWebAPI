@@ -28,7 +28,6 @@ namespace Hotel.Application.Humans.Commands.UpdateHuman
             entity.Surname = request.Surname;
             entity.FirstName = request.FirstName;
             entity.MiddleName = request.MiddleName;
-            entity.Birth = request.Birth;
             entity.PhoneNumber = request.PhoneNumber;
             entity.Email = request.Email;
 

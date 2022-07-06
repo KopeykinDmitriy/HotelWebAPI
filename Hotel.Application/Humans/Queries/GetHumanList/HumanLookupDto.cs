@@ -15,7 +15,6 @@ namespace Hotel.Application.Humans.Queries.GetHumanList
         public string Surname { get; set; }
         public string FirstName { get; set; }
         public string? MiddleName { get; set; }
-        public DateOnly Birth { get; set; }
         public string PhoneNumber { get; set; }
         public string? Email { get; set; }
 
@@ -28,8 +27,6 @@ namespace Hotel.Application.Humans.Queries.GetHumanList
                 opt => opt.MapFrom(human => human.FirstName))
                 .ForMember(humanDto => humanDto.MiddleName,
                 opt => opt.MapFrom(human => human.MiddleName))
-                .ForMember(humanDto => humanDto.Birth,
-                opt => opt.MapFrom(human => human.Birth))
                 .ForMember(humanDto => humanDto.PhoneNumber,
                 opt => opt.MapFrom(human => human.PhoneNumber))
                 .ForMember(humanDto => humanDto.Email,

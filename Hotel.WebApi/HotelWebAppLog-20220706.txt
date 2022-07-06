@@ -1,0 +1,326 @@
+2022-07-06 16:54:02.343 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 16:54:03.195 +05:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-07-06 16:54:05.212 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 16:54:05.212 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 16:54:05.220 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 16:54:05.221 +05:00 [INF] Hosting environment: Development
+2022-07-06 16:54:05.222 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 16:54:06.962 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/ - -
+2022-07-06 16:54:09.142 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/ - - - 404 0 - 2187.0834ms
+2022-07-06 16:54:14.424 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 16:54:15.397 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 973.6700ms
+2022-07-06 16:54:15.418 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 16:54:15.419 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 16:54:15.433 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 13.7459ms
+2022-07-06 16:54:15.487 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.4611ms
+2022-07-06 16:54:15.942 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 16:54:16.074 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/favicon-32x32.png - -
+2022-07-06 16:54:16.099 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-07-06 16:54:16.100 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/favicon-32x32.png - - - 200 628 image/png 25.7875ms
+2022-07-06 16:54:16.457 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 515.3108ms
+2022-07-06 16:54:55.638 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/api/Human - -
+2022-07-06 16:54:55.650 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 16:54:55.691 +05:00 [INF] Route matched with {action = "GetAll", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hotel.Application.Humans.Queries.GetHumanList.HumanListVm]] GetAll() on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 16:54:55.987 +05:00 [INF] Hotel Request: GetHumanListQuery {"$type":"GetHumanListQuery"}
+2022-07-06 16:54:56.011 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 16:54:56.769 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Surname", "h"."FirstName", "h"."MiddleName", "h"."Birth", "h"."PhoneNumber", "h"."Email"
+FROM "Humans" AS "h"
+2022-07-06 16:54:56.791 +05:00 [INF] Executing OkObjectResult, writing value of type 'Hotel.Application.Humans.Queries.GetHumanList.HumanListVm'.
+2022-07-06 16:54:56.837 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi) in 1116.1868ms
+2022-07-06 16:54:56.838 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 16:54:56.844 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/api/Human - - - 200 - application/json;+charset=utf-8 1205.8806ms
+2022-07-06 16:55:31.590 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7219/api/Human application/json 206
+2022-07-06 16:55:31.603 +05:00 [INF] CORS policy execution successful.
+2022-07-06 16:55:31.604 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 16:55:31.638 +05:00 [INF] Route matched with {action = "Create", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(Hotel.WebApi.Models.CreateHumanDto) on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 16:55:31.722 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi) in 83.4956ms
+2022-07-06 16:55:31.724 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 16:55:31.730 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7219/api/Human application/json 206 - 500 - application/json 140.5661ms
+2022-07-06 16:58:47.132 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/api/Human - -
+2022-07-06 16:58:47.132 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 16:58:47.133 +05:00 [INF] Route matched with {action = "GetAll", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hotel.Application.Humans.Queries.GetHumanList.HumanListVm]] GetAll() on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 16:58:47.134 +05:00 [INF] Hotel Request: GetHumanListQuery {"$type":"GetHumanListQuery"}
+2022-07-06 16:58:47.257 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 16:58:47.264 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Surname", "h"."FirstName", "h"."MiddleName", "h"."Birth", "h"."PhoneNumber", "h"."Email"
+FROM "Humans" AS "h"
+2022-07-06 16:58:47.265 +05:00 [INF] Executing OkObjectResult, writing value of type 'Hotel.Application.Humans.Queries.GetHumanList.HumanListVm'.
+2022-07-06 16:58:47.266 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi) in 132.9033ms
+2022-07-06 16:58:47.266 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 16:58:47.266 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/api/Human - - - 200 - application/json;+charset=utf-8 134.2426ms
+2022-07-06 16:58:57.837 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/api/Human - -
+2022-07-06 16:58:57.837 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 16:58:57.838 +05:00 [INF] Route matched with {action = "GetAll", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hotel.Application.Humans.Queries.GetHumanList.HumanListVm]] GetAll() on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 16:58:57.840 +05:00 [INF] Hotel Request: GetHumanListQuery {"$type":"GetHumanListQuery"}
+2022-07-06 16:58:57.842 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 16:58:57.847 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Surname", "h"."FirstName", "h"."MiddleName", "h"."Birth", "h"."PhoneNumber", "h"."Email"
+FROM "Humans" AS "h"
+2022-07-06 16:58:57.847 +05:00 [INF] Executing OkObjectResult, writing value of type 'Hotel.Application.Humans.Queries.GetHumanList.HumanListVm'.
+2022-07-06 16:58:57.848 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi) in 9.8042ms
+2022-07-06 16:58:57.848 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 16:58:57.848 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/api/Human - - - 200 - application/json;+charset=utf-8 10.9437ms
+2022-07-06 17:04:33.381 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:04:34.093 +05:00 [INF] Executed DbCommand (310ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-07-06 17:04:39.880 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:04:40.561 +05:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-07-06 17:04:41.899 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:04:41.899 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:04:41.908 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:04:41.909 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:04:41.909 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:04:42.626 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:04:43.264 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:04:43.345 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 734.8425ms
+2022-07-06 17:04:43.345 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 79.9932ms
+2022-07-06 17:04:43.549 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:04:43.550 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:04:43.620 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 70.0426ms
+2022-07-06 17:04:43.815 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 265.2900ms
+2022-07-06 17:04:45.066 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:04:45.529 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 462.6753ms
+2022-07-06 17:04:53.178 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/api/Human - -
+2022-07-06 17:04:53.305 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:04:53.392 +05:00 [INF] Route matched with {action = "GetAll", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hotel.Application.Humans.Queries.GetHumanList.HumanListVm]] GetAll() on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:04:53.821 +05:00 [INF] Hotel Request: GetHumanListQuery {"$type":"GetHumanListQuery"}
+2022-07-06 17:04:53.847 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:04:54.366 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Surname", "h"."FirstName", "h"."MiddleName", "h"."PhoneNumber", "h"."Email"
+FROM "Humans" AS "h"
+2022-07-06 17:04:54.391 +05:00 [INF] Executing OkObjectResult, writing value of type 'Hotel.Application.Humans.Queries.GetHumanList.HumanListVm'.
+2022-07-06 17:04:54.407 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi) in 1001.563ms
+2022-07-06 17:04:54.407 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:04:54.411 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/api/Human - - - 200 - application/json;+charset=utf-8 1233.3510ms
+2022-07-06 17:05:07.885 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7219/api/Human application/json 124
+2022-07-06 17:05:07.891 +05:00 [INF] CORS policy execution successful.
+2022-07-06 17:05:07.892 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 17:05:07.937 +05:00 [INF] Route matched with {action = "Create", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(Hotel.WebApi.Models.CreateHumanDto) on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:05:08.083 +05:00 [INF] Hotel Request: CreateHumanCommand {"Surname":"string","FirstName":"string","MiddleName":"string","PhoneNumber":"string","Email":"string","$type":"CreateHumanCommand"}
+2022-07-06 17:05:08.548 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:05:08.854 +05:00 [ERR] Failed executing DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 6), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 6), @p5='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Humans" ("HumanId", "Email", "FirstName", "MiddleName", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2022-07-06 17:05:09.461 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'Hotel.Persistence.HotelDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'NOT NULL constraint failed: Humans.Birth'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'NOT NULL constraint failed: Humans.Birth'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-06 17:05:09.472 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi) in 1534.1493ms
+2022-07-06 17:05:09.473 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 17:05:09.478 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7219/api/Human application/json 124 - 500 - application/json 1593.2809ms
+2022-07-06 17:05:50.147 +05:00 [INF] Request starting HTTP/2 PUT https://localhost:7219/api/Human application/json 124
+2022-07-06 17:05:50.154 +05:00 [INF] CORS policy execution successful.
+2022-07-06 17:05:50.157 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.Update (Hotel.WebApi)'
+2022-07-06 17:05:50.163 +05:00 [INF] Route matched with {action = "Update", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Hotel.WebApi.Models.UpdateHumanDto) on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:05:50.306 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.Update (Hotel.WebApi) in 142.1957ms
+2022-07-06 17:05:50.306 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.Update (Hotel.WebApi)'
+2022-07-06 17:05:50.356 +05:00 [INF] Request finished HTTP/2 PUT https://localhost:7219/api/Human application/json 124 - 400 - application/json 209.0436ms
+2022-07-06 17:09:59.539 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:09:59.850 +05:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-07-06 17:10:00.320 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:10:00.320 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:10:00.325 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:10:00.325 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:10:00.325 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:10:00.644 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:10:01.145 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 505.7479ms
+2022-07-06 17:10:01.601 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:10:01.608 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 6.9157ms
+2022-07-06 17:10:01.895 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:10:01.942 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.3601ms
+2022-07-06 17:10:02.837 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:10:03.134 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 296.9723ms
+2022-07-06 17:11:23.276 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:11:23.988 +05:00 [INF] Executed DbCommand (332ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-07-06 17:11:24.623 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:11:24.623 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:11:24.631 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:11:24.632 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:11:24.632 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:11:24.896 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:11:25.534 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 643.2082ms
+2022-07-06 17:11:25.643 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:11:25.644 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:11:25.650 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 6.7395ms
+2022-07-06 17:11:25.677 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6169ms
+2022-07-06 17:11:26.990 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:11:27.356 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 366.7255ms
+2022-07-06 17:16:57.212 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:16:57.287 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:16:57.297 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:16:57.297 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:16:57.297 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:16:57.579 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:16:58.211 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 636.0366ms
+2022-07-06 17:16:58.573 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:16:58.578 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 5.6876ms
+2022-07-06 17:16:58.691 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:16:58.741 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.6170ms
+2022-07-06 17:17:00.146 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:17:00.389 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 243.5917ms
+2022-07-06 17:17:34.765 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:17:34.868 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:17:34.879 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:17:34.879 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:17:34.879 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:17:35.058 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:17:35.585 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 534.3945ms
+2022-07-06 17:17:35.624 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:17:35.624 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:17:35.632 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 8.5001ms
+2022-07-06 17:17:35.691 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.1242ms
+2022-07-06 17:17:36.780 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:17:37.105 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 324.4565ms
+2022-07-06 17:20:25.867 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:20:25.954 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:20:25.961 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:20:25.962 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:20:25.962 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:20:26.197 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:20:26.677 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 485.6088ms
+2022-07-06 17:20:26.719 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:20:26.719 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:20:26.725 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 5.6227ms
+2022-07-06 17:20:26.768 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.2891ms
+2022-07-06 17:20:27.848 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:20:28.224 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 375.3103ms
+2022-07-06 17:21:05.841 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:21:05.911 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:21:05.918 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:21:05.919 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:21:05.919 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:21:06.214 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 17:21:06.707 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 499.6514ms
+2022-07-06 17:21:06.786 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:21:06.786 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:21:06.793 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 6.2718ms
+2022-07-06 17:21:06.832 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.9497ms
+2022-07-06 17:21:07.744 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:21:08.089 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 345.3557ms
+2022-07-06 17:22:21.349 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 17:22:21.440 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 17:22:21.445 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 17:22:21.445 +05:00 [INF] Hosting environment: Development
+2022-07-06 17:22:21.446 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 17:22:35.062 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/ - -
+2022-07-06 17:22:36.496 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/ - - - 404 0 - 1465.8904ms
+2022-07-06 17:22:41.059 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 17:22:41.091 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 36.6757ms
+2022-07-06 17:22:41.399 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 17:22:42.014 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 615.0793ms
+2022-07-06 17:22:43.832 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 17:22:44.426 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 593.6609ms
+2022-07-06 17:22:50.632 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/api/Human - -
+2022-07-06 17:22:50.644 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:22:50.717 +05:00 [INF] Route matched with {action = "GetAll", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hotel.Application.Humans.Queries.GetHumanList.HumanListVm]] GetAll() on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:22:51.286 +05:00 [INF] Hotel Request: GetHumanListQuery {"$type":"GetHumanListQuery"}
+2022-07-06 17:22:53.084 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:22:54.316 +05:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Surname", "h"."FirstName", "h"."MiddleName", "h"."PhoneNumber", "h"."Email"
+FROM "Humans" AS "h"
+2022-07-06 17:22:54.377 +05:00 [INF] Executing OkObjectResult, writing value of type 'Hotel.Application.Humans.Queries.GetHumanList.HumanListVm'.
+2022-07-06 17:22:54.493 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi) in 3744.4455ms
+2022-07-06 17:22:54.494 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:22:54.518 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/api/Human - - - 200 - application/json;+charset=utf-8 3885.6707ms
+2022-07-06 17:23:15.624 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7219/api/Human application/json 124
+2022-07-06 17:23:15.642 +05:00 [INF] CORS policy execution successful.
+2022-07-06 17:23:15.644 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 17:23:15.684 +05:00 [INF] Route matched with {action = "Create", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(Hotel.WebApi.Models.CreateHumanDto) on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:23:15.965 +05:00 [INF] Hotel Request: CreateHumanCommand {"Surname":"string","FirstName":"string","MiddleName":"string","PhoneNumber":"string","Email":"string","$type":"CreateHumanCommand"}
+2022-07-06 17:23:15.977 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:23:16.298 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 6), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 6), @p5='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Humans" ("HumanId", "Email", "FirstName", "MiddleName", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2022-07-06 17:23:16.354 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-07-06 17:23:16.365 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi) in 680.8362ms
+2022-07-06 17:23:16.365 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 17:23:16.366 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7219/api/Human application/json 124 - 200 - application/json;+charset=utf-8 742.0569ms
+2022-07-06 17:23:29.776 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/api/Human - -
+2022-07-06 17:23:29.777 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:23:29.777 +05:00 [INF] Route matched with {action = "GetAll", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hotel.Application.Humans.Queries.GetHumanList.HumanListVm]] GetAll() on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:23:29.778 +05:00 [INF] Hotel Request: GetHumanListQuery {"$type":"GetHumanListQuery"}
+2022-07-06 17:23:29.931 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:23:29.940 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Surname", "h"."FirstName", "h"."MiddleName", "h"."PhoneNumber", "h"."Email"
+FROM "Humans" AS "h"
+2022-07-06 17:23:29.944 +05:00 [INF] Executing OkObjectResult, writing value of type 'Hotel.Application.Humans.Queries.GetHumanList.HumanListVm'.
+2022-07-06 17:23:29.947 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi) in 169.9358ms
+2022-07-06 17:23:29.947 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:23:29.948 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/api/Human - - - 200 - application/json;+charset=utf-8 171.2814ms
+2022-07-06 17:26:45.200 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7219/api/Human application/json 124
+2022-07-06 17:26:45.201 +05:00 [INF] CORS policy execution successful.
+2022-07-06 17:26:45.201 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 17:26:45.201 +05:00 [INF] Route matched with {action = "Create", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(Hotel.WebApi.Models.CreateHumanDto) on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:26:45.206 +05:00 [INF] Hotel Request: CreateHumanCommand {"Surname":"string","FirstName":"string","MiddleName":"string","PhoneNumber":"string","Email":"string","$type":"CreateHumanCommand"}
+2022-07-06 17:26:45.208 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:26:45.212 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 6), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 6), @p5='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Humans" ("HumanId", "Email", "FirstName", "MiddleName", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2022-07-06 17:26:45.215 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-07-06 17:26:45.216 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi) in 14.537ms
+2022-07-06 17:26:45.216 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.Create (Hotel.WebApi)'
+2022-07-06 17:26:45.218 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7219/api/Human application/json 124 - 200 - application/json;+charset=utf-8 16.5505ms
+2022-07-06 17:26:53.047 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/api/Human - -
+2022-07-06 17:26:53.048 +05:00 [INF] Executing endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:26:53.048 +05:00 [INF] Route matched with {action = "GetAll", controller = "Human"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hotel.Application.Humans.Queries.GetHumanList.HumanListVm]] GetAll() on controller Hotel.WebApi.Controllers.HumanController (Hotel.WebApi).
+2022-07-06 17:26:53.049 +05:00 [INF] Hotel Request: GetHumanListQuery {"$type":"GetHumanListQuery"}
+2022-07-06 17:26:53.051 +05:00 [INF] Entity Framework Core 6.0.6 initialized 'HotelDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.6' with options: None
+2022-07-06 17:26:53.052 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Surname", "h"."FirstName", "h"."MiddleName", "h"."PhoneNumber", "h"."Email"
+FROM "Humans" AS "h"
+2022-07-06 17:26:53.053 +05:00 [INF] Executing OkObjectResult, writing value of type 'Hotel.Application.Humans.Queries.GetHumanList.HumanListVm'.
+2022-07-06 17:26:53.053 +05:00 [INF] Executed action Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi) in 4.7308ms
+2022-07-06 17:26:53.053 +05:00 [INF] Executed endpoint 'Hotel.WebApi.Controllers.HumanController.GetAll (Hotel.WebApi)'
+2022-07-06 17:26:53.053 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/api/Human - - - 200 - application/json;+charset=utf-8 6.0446ms
+2022-07-06 18:39:29.300 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 18:39:29.315 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 21.8765ms
+2022-07-06 18:39:29.431 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 18:39:29.541 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 110.6683ms
+2022-07-06 18:39:30.123 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 18:39:30.242 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.5200ms
+2022-07-06 18:51:53.566 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 18:51:54.008 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 443.0149ms
+2022-07-06 18:51:54.109 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 18:51:54.110 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 18:51:54.111 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.9241ms
+2022-07-06 18:51:54.150 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.8177ms
+2022-07-06 18:51:54.803 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 18:51:54.821 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.6065ms
