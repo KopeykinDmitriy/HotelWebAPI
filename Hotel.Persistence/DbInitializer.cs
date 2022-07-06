@@ -10,7 +10,7 @@ namespace Hotel.Persistence
     {
         public static void Initialize(HotelDbContext context)
         {
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
         }
     }
 }

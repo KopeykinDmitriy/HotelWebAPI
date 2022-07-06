@@ -9,7 +9,6 @@ namespace Hotel.WebApi.Models
         public string Surname { get; set; }
         public string FirstName { get; set; }
         public string? MiddleName { get; set; }
-        public DateOnly Birth { get; set; }
         public string PhoneNumber { get; set; }
         public string? Email { get; set; }
         public void Mapping(Profile profile)
@@ -21,8 +20,6 @@ namespace Hotel.WebApi.Models
                 opt => opt.MapFrom(humanDto => humanDto.FirstName))
                 .ForMember(humanCommand => humanCommand.MiddleName,
                 opt => opt.MapFrom(humanDto => humanDto.MiddleName))
-                .ForMember(humanCommand => humanCommand.Birth,
-                opt => opt.MapFrom(humanDto => humanDto.Birth))
                 .ForMember(humanCommand => humanCommand.PhoneNumber,
                 opt => opt.MapFrom(humanDto => humanDto.PhoneNumber))
                 .ForMember(humanCommand => humanCommand.Email,
