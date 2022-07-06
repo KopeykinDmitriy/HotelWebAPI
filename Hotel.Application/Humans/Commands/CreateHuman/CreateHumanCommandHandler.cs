@@ -21,6 +21,7 @@ namespace Hotel.Application.Humans.Commands.CreateHuman
                 Surname = request.Surname,
                 FirstName = request.FirstName,
                 MiddleName = request.MiddleName,
+                Birth = request.Birth,
                 PhoneNumber = request.PhoneNumber,
                 Email = request.Email,
                 HumanId = Guid.NewGuid()

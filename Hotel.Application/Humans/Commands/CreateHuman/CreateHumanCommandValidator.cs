@@ -16,6 +16,8 @@ namespace Hotel.Application.Humans.Commands.CreateHuman
             RuleFor(createHumanCommand =>
             createHumanCommand.FirstName).NotEmpty();
             RuleFor(createHumanCommand =>
+            createHumanCommand.Birth).NotEmpty();
+            RuleFor(createHumanCommand =>
             createHumanCommand.PhoneNumber).NotEmpty();
         }
     }

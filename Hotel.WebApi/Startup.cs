@@ -42,12 +42,7 @@ namespace Hotel.WebApi
                 });
             });
 
-            services.AddSwaggerGen(config =>
-            {
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                config.IncludeXmlComments(xmlPath);
-            });
+            services.AddSwaggerGen();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -57,11 +52,7 @@ namespace Hotel.WebApi
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(config =>
-            {
-                config.RoutePrefix = string.Empty;
-                config.SwaggerEndpoint("swagger/v1/swagger.json", "HotelAPI");
-            });
+            app.UseSwaggerUI();
             app.UseCustomExceptionHandler();
             app.UseRouting();
             app.UseHttpsRedirection();
