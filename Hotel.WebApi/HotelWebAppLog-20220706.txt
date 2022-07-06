@@ -324,3 +324,36 @@ FROM "Humans" AS "h"
 2022-07-06 18:51:54.150 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.8177ms
 2022-07-06 18:51:54.803 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
 2022-07-06 18:51:54.821 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.6065ms
+2022-07-06 20:16:51.122 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 20:16:51.219 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 20:16:51.227 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 20:16:51.228 +05:00 [INF] Hosting environment: Development
+2022-07-06 20:16:51.228 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 20:16:51.387 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/index.html - -
+2022-07-06 20:16:51.761 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/ - -
+2022-07-06 20:16:51.814 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/index.html - - - 404 0 - 429.8724ms
+2022-07-06 20:16:51.819 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/ - - - 301 0 - 45.6870ms
+2022-07-06 20:16:51.919 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/index.html - -
+2022-07-06 20:16:52.847 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger-ui.css - -
+2022-07-06 20:16:52.855 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/index.html - - - 200 - text/html;charset=utf-8 935.8003ms
+2022-07-06 20:16:52.868 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger-ui-bundle.js - -
+2022-07-06 20:16:52.870 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger-ui-standalone-preset.js - -
+2022-07-06 20:16:52.889 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:16:52.934 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 45.0782ms
+2022-07-06 20:16:52.989 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-07-06 20:16:52.989 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-07-06 20:16:52.990 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 119.7179ms
+2022-07-06 20:16:52.990 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger-ui-bundle.js - - - 200 1095087 application/javascript 121.8279ms
+2022-07-06 20:16:52.993 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-07-06 20:16:52.997 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger-ui.css - - - 200 143943 text/css 150.5033ms
+2022-07-06 20:16:53.061 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 20:16:53.140 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.1113ms
+2022-07-06 20:16:54.769 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 20:16:54.918 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/favicon-32x32.png - -
+2022-07-06 20:16:54.923 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-07-06 20:16:54.928 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/favicon-32x32.png - - - 200 628 image/png 9.0280ms
+2022-07-06 20:16:55.576 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 806.2159ms
+2022-07-06 20:24:05.043 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 20:24:05.099 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.3324ms
+2022-07-06 20:24:22.947 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:24:22.949 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 3.0168ms
