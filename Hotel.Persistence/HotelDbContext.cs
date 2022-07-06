@@ -14,7 +14,9 @@ namespace Hotel.Persistence
     {
         public DbSet<Human> Humans { get; set; }
         public HotelDbContext(DbContextOptions<HotelDbContext> options)
-            : base(options) { }
+            : base(options) 
+        {
+        }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new HumanConfiguration());
