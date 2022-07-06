@@ -357,3 +357,55 @@ FROM "Humans" AS "h"
 2022-07-06 20:24:05.099 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.3324ms
 2022-07-06 20:24:22.947 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
 2022-07-06 20:24:22.949 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 3.0168ms
+2022-07-06 20:47:00.405 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 20:47:00.507 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 20:47:00.525 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 20:47:00.526 +05:00 [INF] Hosting environment: Development
+2022-07-06 20:47:00.526 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 20:47:03.043 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/index.html - -
+2022-07-06 20:47:03.469 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:47:03.475 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 20:47:03.524 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 51.8438ms
+2022-07-06 20:47:03.860 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 385.2759ms
+2022-07-06 20:47:04.034 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/index.html - - - 200 - text/html;charset=utf-8 1000.8360ms
+2022-07-06 20:47:04.496 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:47:04.496 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 20:47:04.497 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.7493ms
+2022-07-06 20:47:04.531 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.1941ms
+2022-07-06 20:47:05.341 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 20:47:05.776 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/v1/swagger.json - -
+2022-07-06 20:47:05.883 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 541.2850ms
+2022-07-06 20:47:05.903 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/v1/swagger.json - - - 404 0 - 126.9302ms
+2022-07-06 20:47:11.747 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/index.html - -
+2022-07-06 20:47:11.758 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/index.html - - - 200 - text/html;charset=utf-8 8.9288ms
+2022-07-06 20:47:11.831 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:47:11.831 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.4704ms
+2022-07-06 20:47:11.832 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 20:47:11.970 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.5006ms
+2022-07-06 20:47:12.644 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/v1/swagger.json - -
+2022-07-06 20:47:12.645 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/v1/swagger.json - - - 404 0 - 1.0003ms
+2022-07-06 20:53:12.337 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/index.html - -
+2022-07-06 20:53:12.544 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/index.html - - - 200 - text/html;charset=utf-8 219.4102ms
+2022-07-06 20:53:12.644 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:53:12.654 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.6097ms
+2022-07-06 20:53:12.807 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 20:53:12.917 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.7429ms
+2022-07-06 20:53:13.973 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/v1/swagger.json - -
+2022-07-06 20:53:13.979 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/v1/swagger.json - - - 404 0 - 5.9192ms
+2022-07-06 20:53:27.763 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 20:53:27.796 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 32.5451ms
+2022-07-06 20:53:30.506 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:53:30.507 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 0.4829ms
+2022-07-06 20:56:05.759 +05:00 [INF] Now listening on: https://localhost:7219
+2022-07-06 20:56:05.907 +05:00 [INF] Now listening on: http://localhost:5219
+2022-07-06 20:56:05.921 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 20:56:05.922 +05:00 [INF] Hosting environment: Development
+2022-07-06 20:56:05.922 +05:00 [INF] Content root path: C:\Users\Dima\Desktop\Практика\Hotel.backend\Hotel.WebApi
+2022-07-06 20:56:06.693 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/index.html - -
+2022-07-06 20:56:07.444 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/index.html - - - 200 - text/html;charset=utf-8 755.0755ms
+2022-07-06 20:56:07.519 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_vs/browserLink - -
+2022-07-06 20:56:07.519 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 20:56:07.526 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 7.1275ms
+2022-07-06 20:56:07.591 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.5517ms
+2022-07-06 20:56:09.127 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - -
+2022-07-06 20:56:09.479 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 351.8316ms

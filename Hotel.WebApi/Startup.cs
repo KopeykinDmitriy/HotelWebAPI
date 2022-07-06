@@ -60,9 +60,9 @@ namespace Hotel.WebApi
             app.UseSwaggerUI(config =>
             {
                 config.RoutePrefix = string.Empty;
-                config.SwaggerEndpoint("v1/swagger.json", "HotelAPI");
+                config.SwaggerEndpoint("./swagger/v1/swagger.json", "HotelAPI");
             });
-            app.UseCustomExceptionHandler();
+            app.UseCustomExceptionHandler(); 
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
