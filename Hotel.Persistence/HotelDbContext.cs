@@ -13,6 +13,7 @@ namespace Hotel.Persistence
     public class HotelDbContext : DbContext, IHotelDbContext
     {
         public DbSet<Human> Humans { get; set; }
+        public DbSet<Room> Rooms { get; set; }
         public HotelDbContext(DbContextOptions<HotelDbContext> options)
             : base(options) 
         {
@@ -20,6 +21,7 @@ namespace Hotel.Persistence
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new HumanConfiguration());
+            builder.ApplyConfiguration(new RoomConfiguration());
             base.OnModelCreating(builder);
         }
     }

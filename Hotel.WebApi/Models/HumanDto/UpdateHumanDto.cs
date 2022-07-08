@@ -2,7 +2,7 @@
 using Hotel.Application.Common.Mappings;
 using Hotel.Application.Humans.Commands.UpdateHuman;
 
-namespace Hotel.WebApi.Models
+namespace Hotel.WebApi.Models.HumanDto
 {
     public class UpdateHumanDto : IMapWith<UpdateHumanCommand>
     {

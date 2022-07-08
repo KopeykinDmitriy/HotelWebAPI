@@ -11,14 +11,14 @@ namespace Hotel.Application.Humans.Commands.UpdateHuman
     {
         public UpdateHumanCommandValidator()
         {
-            RuleFor(createHumanCommand =>
-            createHumanCommand.Surname).NotEmpty();
-            RuleFor(createHumanCommand =>
-            createHumanCommand.FirstName).NotEmpty();
-            RuleFor(createHumanCommand =>
-            createHumanCommand.PhoneNumber).NotEmpty();
-            RuleFor(createHumanCommand =>
-            createHumanCommand.HumanId).NotEqual(Guid.Empty);
+            RuleFor(updateHumanCommand =>
+            updateHumanCommand.Surname).NotEmpty();
+            RuleFor(updateHumanCommand =>
+            updateHumanCommand.FirstName).NotEmpty();
+            RuleFor(updateHumanCommand =>
+            updateHumanCommand.PhoneNumber).NotEmpty();
+            RuleFor(updateHumanCommand =>
+            updateHumanCommand.HumanId).NotEqual(Guid.Empty);
         }
     }
 }

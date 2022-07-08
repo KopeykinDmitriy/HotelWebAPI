@@ -11,6 +11,7 @@ namespace Hotel.Application.Interfaces
     public interface IHotelDbContext
     {
         DbSet<Human> Humans { get; set; }
+        DbSet<Room> Rooms { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

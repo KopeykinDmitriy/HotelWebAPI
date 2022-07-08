@@ -3,7 +3,7 @@ using Hotel.Application.Common.Mappings;
 using Hotel.Application.Humans.Commands.CreateHuman;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hotel.WebApi.Models
+namespace Hotel.WebApi.Models.HumanDto
 {
     public class CreateHumanDto : IMapWith<CreateHumanCommand>
     {

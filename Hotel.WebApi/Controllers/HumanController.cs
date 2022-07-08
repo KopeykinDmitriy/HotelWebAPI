@@ -4,7 +4,7 @@ using AutoMapper;
 using Hotel.Application.Humans.Commands.CreateHuman;
 using Hotel.Application.Humans.Commands.UpdateHuman;
 using Hotel.Application.Humans.Commands.DeleteHuman;
-using Hotel.WebApi.Models;
+using Hotel.WebApi.Models.HumanDto;
 
 namespace Hotel.WebApi.Controllers
 {
@@ -59,7 +59,7 @@ namespace Hotel.WebApi.Controllers
         /// Updates the human
         /// </summary>
         /// <remarks>
-        /// PUT /human
+        /// PUT /human/{HumanId}
         /// {
         ///     surname: "updated human surname"
         /// }

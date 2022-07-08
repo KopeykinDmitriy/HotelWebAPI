@@ -11,8 +11,8 @@ namespace Hotel.Application.Humans.Commands.DeleteHuman
     {
         public DeleteHumanCommandValidator()
         {
-            RuleFor(createHumanCommand =>
-            createHumanCommand.HumanId).NotEqual(Guid.Empty);
+            RuleFor(deleteHumanCommand =>
+            deleteHumanCommand.HumanId).NotEqual(Guid.Empty);
         }
     }
 }
